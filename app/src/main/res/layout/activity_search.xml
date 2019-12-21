@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/pj2"
+    tools:context="nnk.com.alumniconnect.Search">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Search By:"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#f3f5f7"
+        android:id="@+id/textView25"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp1"
+        android:layout_below="@+id/textView25"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="52dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText16"
+        android:hint="enter your keyword here"
+        android:layout_marginBottom="10dp"
+        android:textColorHint="#f9fdfd"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/sp1"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:background="#08f424"
+        android:onClick="search"
+        android:id="@+id/button5"
+        android:layout_below="@+id/editText16"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Home"
+        android:onClick="display5"
+        android:background="#00f100"
+        android:id="@+id/button6"
+        android:layout_alignTop="@+id/textView25"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/button5" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="......."
+        android:textStyle="bold"
+        android:background="#123"
+        android:textSize="10sp"
+        android:textColor="#f3f6f9"
+        android:id="@+id/tvs"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

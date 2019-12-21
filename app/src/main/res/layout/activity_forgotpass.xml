@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/pj2"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="nnk.com.alumniconnect.ForgotpassActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Reset Your Password!"
+        android:id="@+id/textView22"
+        android:textColor="#f0f2f0"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="User-Id:"
+        android:textColor="#f0f2f0"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:id="@+id/textView23"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/textView22"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText14"
+        android:layout_below="@+id/textView23"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="New Password:"
+        android:textColor="#f0f2f0"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:id="@+id/textView24"
+        android:layout_marginBottom="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText15"
+        android:layout_below="@+id/textView24"
+        android:layout_alignEnd="@+id/editText14"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:textStyle="italic"
+        android:background="#00ff00"
+        android:textSize="20sp"
+        android:id="@+id/button4"
+        android:layout_below="@+id/editText15"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp" />
+</RelativeLayout>

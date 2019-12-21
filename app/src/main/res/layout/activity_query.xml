@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/pj2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="nnk.com.alumniconnect.Query">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Student Queries"
+        android:layout_marginLeft="3dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#f2f5f5"
+        android:id="@+id/textView26"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView28" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fullName"
+        android:hint="Enter your Queries"
+        android:textColorHint="#f3f6f7"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/textView26"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:onClick="save1"
+        android:background="#11ed11"
+        android:id="@+id/button7"
+        android:layout_below="@+id/fullName"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Recent Queries:"
+        android:layout_marginBottom="15dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#f2f5f5"
+        android:id="@+id/textView27"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+
+
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="  "
+        android:textSize="10sp"
+        android:maxLines = "500"
+        android:scrollbars = "vertical"
+        android:background="#123"
+        android:textColor="#f3f3f5"
+        android:id="@+id/textView28"
+        android:layout_below="@+id/textView27"
+        android:layout_alignEnd="@+id/button8"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Home"
+        android:onClick="display6"
+        android:background="#3cfa03"
+        android:id="@+id/button9"
+        android:layout_alignTop="@+id/textView26"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Queries"
+        android:onClick="dataView"
+        android:id="@+id/button8"
+        android:background="#32ef02"
+        android:layout_alignBottom="@+id/textView27"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
