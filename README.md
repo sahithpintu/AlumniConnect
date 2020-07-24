@@ -1,1 +1,1 @@
-# AlumniConnect
+# AlumniConnect Android Application
